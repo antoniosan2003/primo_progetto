@@ -12,3 +12,11 @@ def lista(request):
 
 def chisiamo(request):
     return render(request, "chisiamo.html")
+
+def variabili(request):
+    context={
+        'var1': 'prima variabile',
+        'var2': 'seconda variabile',
+        'var3': 'terza variabile'
+    }
+    return render(request, "variabili.html", context)
