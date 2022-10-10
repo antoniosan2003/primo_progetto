@@ -23,3 +23,6 @@ def variabili(request):
 
 def index(request):
     return render(request, "index.html")
+
+def es_if(request):
+    return render(request, "es_if.html")
