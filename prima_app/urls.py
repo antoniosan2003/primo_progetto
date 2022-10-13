@@ -1,5 +1,5 @@
 from django.urls import path
-from prima_app.views import homepage,welcome,lista,chisiamo,variabili,index,es_if
+from prima_app.views import homepage,welcome,lista,chisiamo,variabili,index
 
 app_name="prima_app"
 urlpatterns=[
