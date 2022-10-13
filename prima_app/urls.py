@@ -10,10 +10,7 @@ urlpatterns=[
     path('variabili', variabili, name='variabili'),
     path('', index, name='index'),
 ]
-app_name="seconda_app"
-urlpatterns=[
-    path('es_if', es_if, name='es_if'),
-]
+
 
 
 
