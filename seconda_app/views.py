@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,datetime
 
 # Create your views here.
 def es_if(request):
