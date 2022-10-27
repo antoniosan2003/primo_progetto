@@ -12,11 +12,11 @@
             <b>var2 = {{ var2 }} </b><br/>
             <b>somma = {{somma}}</b><br/>
             {% if var1 < var2 %}
-                <p style="color:green"><i>{{var1}} è minore di {{var2}}</i></p>
+                <i style="color:red"> {{var1}} </i><i>è minore di </i><i style="color:green"> {{var2}} </i>
             {% elif var1 > var2 %}
-                <p><i>var1 è maggiore di var2</i></p>
+            <i style="color:green"> {{var1}} </i><i>è maggiore di </i><i style="color:red"> {{var2}} </i>
             {% else %}
-                <p><i>var1 è uguale a var2</i></p>
+                <p><i> {{var1}} è uguale a {{var2}} </i></p>
             {% endif %}
         </ol>
     </body>

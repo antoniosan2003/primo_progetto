@@ -16,4 +16,11 @@ def somma(request):
     return render(request, "maxmin.html", context)
 
 def media(request):
-    return render(request, "media.html")
+    lista = []
+    for i in range(30):
+        lista.append(random.randint(0,10))
+    context = {
+        "lista": lista,
+        "media":sum(lista)/len(lista),
+    }
+    return render(request, "media.html", context)
