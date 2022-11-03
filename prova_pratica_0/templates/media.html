@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>media</title>
-    </head>
-    <body>
-        <h1>Media</h1>
+{%extends "base.html"%}
 
-        {%for i in lista %}
-            {{i}}
-        {% endfor %}
+{%block content%}
 
-        {% if media < 6 %}
-            <p style="color:red;">{{media}}</p>
-        {% elif media > 6 %}
-            <p style="color:green;">{{media}}</p>
-        {% else %}
-            <p>{{media}}</p>
-        {% endif %}
-    
-    </body>
-</html>
+     <h1>media</h1>
+
+     {%for i in lista %}
+        {{i}}
+    {% endfor %}
+
+    {% if media < 6 %}
+        <p style="color:red;">{{media}}</p>
+    {% elif media > 6 %}
+        <p style="color:green;">{{media}}</p>
+    {% else %}
+        <p>{{media}}</p>
+    {% endif %}
+
+{%endblock content%}
