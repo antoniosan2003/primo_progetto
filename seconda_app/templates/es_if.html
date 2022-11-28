@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>es_if</title>
-    </head>
+{%extends "base.html"%}
+
+{%block content%}
+
     <body>
         <b>var1 = {{ var1 }} </b><br/>
         <b>var2 = {{ var2 }} </b><br/>
@@ -52,4 +48,5 @@
         <p><i>var1 è uguale a var2</i></p>
         {% endif %}
     </body>
-</html>
+
+{%endblock content%}
