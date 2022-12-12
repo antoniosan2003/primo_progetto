@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class VerificaConfig(AppConfig):
+class ProvaPratica1Config(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'verifica'
+    name = 'prova_pratica_1'

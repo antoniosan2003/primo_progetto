@@ -5,7 +5,7 @@ import random
 def index(request):
     return render(request, "index2.html")
 
-def somma(request):
+def maxmin(request):
     x=random.randint(1, 10)
     y=random.randint(1, 10)
     context={
