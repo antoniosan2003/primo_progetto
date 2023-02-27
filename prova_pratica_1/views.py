@@ -14,8 +14,8 @@ def view_a(request):
     context={
         'materie' : materie,
     }
-    
     return render(request, "view_a.html", context)
+    #return render(request, "view_a.html", context)
 
 def view_b(request):
     voti = {'Giuseppe Gullo':[("Matematica",9,0),("Italiano",7,3),("Inglese",7,4),("Storia",7,4),("Geografia",5,7)],
