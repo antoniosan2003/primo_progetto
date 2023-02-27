@@ -25,4 +25,10 @@ urlpatterns = [
     path('news/', include("news.urls", namespace="news")),
     path('', base, name="base"),
     path('prova_pratica_1/', include("prova_pratica_1.urls", namespace="prova_pratica_1")),
+    path('forms_app/', include("forms_app.urls", namespace="forms_app")),
+]
+
+#Add Django site authentication urls (for login, logout, password management)
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls')),
 ]

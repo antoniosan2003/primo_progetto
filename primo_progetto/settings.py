@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'prova_pratica_0',
     'news',
     'prova_pratica_1',
+    'forms_app'
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'news/templates'),
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'prova_pratica_1/templates'),
+            os.path.join(BASE_DIR, 'forms_app/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -133,3 +135,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
